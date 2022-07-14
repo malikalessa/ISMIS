@@ -7,7 +7,7 @@
 Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
 
-![image](./ISMIS.png)
+![image](https://user-images.githubusercontent.com/38468857/178991622-3582906a-f8da-431b-9cd5-abc98e113c5d.png)
 
 
 
