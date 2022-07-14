@@ -30,7 +30,7 @@ Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 ###  Description for this repository
 Two different types of datasets are used in this work CICICD17, and CIC-Maldroid20. MinMax scaler has been used to normalize the datasets. The datasets and models that have been used in work can be downloaded through
 * Datasets and Models.
-   [Datasets and Models](https://drive.google.com/drive/folders/1TUCquwp-mB4UVcJrnoHkRQKkCKKJ407n).
+  
   
    
 
