@@ -29,7 +29,7 @@ Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
 
 ###  Description for this repository
-Two different types of datasets are used in this work CICICD17, and CIC-Maldroid20. MinMax scaler has been used to normalize the datasets. The datasets and models that have been used in work can be downloaded through [Datasets and Models] https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR
+Two different types of datasets are used in this work CICICD17, and CIC-Maldroid20. MinMax scaler has been used to normalize the datasets. The datasets and models that have been used in work can be downloaded through [Datasets and Models] (https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR)
   
   
    
@@ -43,7 +43,7 @@ The implementation for all the experiments used in this work are listed in this 
 
 ## Replicate the Experiments
 
-To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models] https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR  can be used. Global Variable are saved in Conf.conf :
+To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models]( https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR)  can be used. Global Variable are saved in Conf.conf :
 
 * ###### TRAIN_BASELINE = 0   &emsp;        #1 train baseline with hyperopt <br />
 * ###### CREATE_ADVERSARIAL_SET=0 &emsp;  #if 1 create the adversarial samples <br />
