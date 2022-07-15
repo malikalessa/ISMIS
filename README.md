@@ -38,13 +38,13 @@ Two different types of datasets are used in this work CICICD17, and CIC-Maldroid
 ### How to use
 
 The implementation for all the experiments used in this work are listed in this repository.
-  * main.py : to run XENIA
+  * main.py : to run ISMIS
  
 
 
 ## Replicate the Experiments
 
-To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models](https://drive.google.com/drive/folders/1TUCquwp-mB4UVcJrnoHkRQKkCKKJ407n) can be used. Global Variable are saved in Conf.conf :
+To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models]  can be used. Global Variable are saved in Conf.conf :
 
 * ###### TRAIN_BASELINE = 0   &emsp;        #1 train baseline with hyperopt <br />
 * ###### CREATE_ADVERSARIAL_SET=0 &emsp;  #if 1 create the adversarial samples <br />
