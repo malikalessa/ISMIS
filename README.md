@@ -29,8 +29,7 @@ Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
 
 ###  Description for this repository
-Two different types of datasets are used in this work CICICD17, and CIC-Maldroid20. MinMax scaler has been used to normalize the datasets. The datasets and models that have been used in work can be downloaded through
-* Datasets and Models.
+Two different types of datasets are used in this work CICICD17, and CIC-Maldroid20. MinMax scaler has been used to normalize the datasets. The datasets and models that have been used in work can be downloaded through [Datasets and Models] https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR
   
   
    
@@ -44,17 +43,19 @@ The implementation for all the experiments used in this work are listed in this 
 
 ## Replicate the Experiments
 
-To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models]  can be used. Global Variable are saved in Conf.conf :
+To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models] https://drive.google.com/drive/folders/1D60-5h4Bp4RC_P4qMHkCMYm6tWrc34tR  can be used. Global Variable are saved in Conf.conf :
 
 * ###### TRAIN_BASELINE = 0   &emsp;        #1 train baseline with hyperopt <br />
 * ###### CREATE_ADVERSARIAL_SET=0 &emsp;  #if 1 create the adversarial samples <br />
-* ###### Attack_Type =1      &emsp;  ## 1 for FGSM  <br />
+* ###### Attack_Type =1      &emsp;  ## 1 for FGSM, 2 for BIM, and 3 for PGD <br />
 
 * ###### train_Attack = 1             &emsp;      #0 not to train, 1 to train / To Train a model using adversarial training <br />
-* ###### local_shap_values = 1  &emsp; #if 1 to compute local shap values, 0 to load the saved values <br />
-* ###### Config_model= 6             &emsp;  #if 2 for baseline(V1), 6 for T_A model (V2) <br />
-* ###### Fine_Tuning = 0 &emsp;    #if 1 To fine-tune V2 (Adversarial training model). The model will be fine-tuned twice, using XAI and T+A <br />
+* ###### Dalex_relevance = 0 = 1  &emsp; # # 1 to compute dalex relevance <br />
+* ###### Dalex_model= 6             &emsp;  #if 2 for baseline(V1), 6 for T_A model (V2) <br />
+* ###### Dalex_Dataset_type = 0 &emsp;    # 1 for original dataset, 0 for original dataset+adversarial samples <br />
  
-* ###### Fine_Tuning_baseline = 0      &emsp;          ## 1 To fine tune the baseline(V1) model, The model will be fine tuned twice, using XAI and T <br />
+* ###### Dalex_train_dataset = 1      &emsp;          #1 for training dataset, 0 for testing dataset, 2 for Adversarial Dataset <br />
 
+* ###### features_step = 5      &emsp;          #the number of features to be selected based on the intersection between XAI-Training and XAI_Adversarial <br />
+* ###### XAIFS = 1      &emsp;          ## 1 to run XAIFS <br />
 
