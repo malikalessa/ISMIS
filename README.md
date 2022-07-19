@@ -50,12 +50,12 @@ To replicate the experiments of this work, the models and datasets that have bee
 * ###### Attack_Type =1      &emsp;  ## 1 for FGSM, 2 for BIM, and 3 for PGD <br />
 
 * ###### train_Attack = 1             &emsp;      #0 not to train, 1 to train / To Train a model using adversarial training <br />
-* ###### Dalex_relevance = 0 = 1  &emsp; # # 1 to compute dalex relevance <br />
+* ###### Dalex_relevance = 0   &emsp; # # 1 to compute dalex relevance, to compute the global feature relevance for the model <br />
 * ###### Dalex_model= 6             &emsp;  #if 2 for baseline(V1), 6 for T_A model (V2) <br />
-* ###### Dalex_Dataset_type = 0 &emsp;    # 1 for original dataset, 0 for original dataset+adversarial samples <br />
+* ###### Dalex_Dataset_type = 0 &emsp;    # 1 for original dataset, 0 adversarial samples <br />
  
-* ###### Dalex_train_dataset = 1      &emsp;          #1 for training dataset, 0 for testing dataset, 2 for Adversarial Dataset <br />
+* ###### Dalex_train_dataset = 1      &emsp;          #1 for training dataset, 2 for Adversarial Dataset <br />
 
-* ###### features_step = 5      &emsp;          #the number of features to be selected based on the intersection between XAI-Training and XAI_Adversarial <br />
-* ###### XAIFS = 1      &emsp;          ## 1 to run XAIFS <br />
+* ###### features_step = 15      &emsp;          #the number of features to be selected based on the intersection between XAI-Training and XAI_Adversarial <br />
+* ###### XAIFS = 1      &emsp;          ## 1 to run XAIFS , XAIFS is the training of the model based on feature selection using XAI <br />
 
