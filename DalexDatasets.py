@@ -76,7 +76,7 @@ class DalexDatasets():
 
         if (int(self.config.get('Dalex_train_dataset')) == 2):
             print('Adversarial Dataset is used in Dalex')
-            dataset_path = self.dsConfig.get('pathDalexDataset') + self.dsConfig.get('Dataset_name') + '_on_Adversarial.csv'
+            dataset_path = self.dsConfig.get('pathDalexDataset') + self.dsConfig.get('Dataset_name') + 'Dalex_on_Adversarial_Samples.csv'
             train_dataset = adv_samples
             y_labels = y_train_adv
 
@@ -105,12 +105,23 @@ class DalexDatasets():
 
     def loadDalexDatasets(self):
 
-        path = self.dsConfig.get('pathDalexDataset') + self.dsConfig.get('Dataset_name')
+
+        attack_type = int(self.config.get('Attack_Type'))
+        print(attack_type)
+        if attack_type == 1:
+            attack_path = 'FGSM/'
+        elif attack_type == 2:
+            attack_path = 'BIM/'
+        elif attack_type == 3:
+            attack_path = 'PGD/'
+
+        path = self.dsConfig.get('pathDalexDataset') + attack_path + self.dsConfig.get('Dataset_name')
+
         Dalex_on_Train = pd.read_csv(path + '_Dalex_on_Train.csv')
-        Dalex_on_Adversarial = pd.read_csv(path + '_on_Adversarial.csv')
+        Dalex_on_Adversarial = pd.read_csv(path + '_Dalex_on_Adversarial_Samples.csv')
 
         print('The Dalex Files has been uploaded')
 
-        return Dalex_on_Train,Dalex_on_Adversarial
+        return Dalex_on_Train, Dalex_on_Adversarial
 
 

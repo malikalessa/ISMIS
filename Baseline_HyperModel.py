@@ -146,7 +146,11 @@ def reset_global_variables(train_X, train_Y, test_X, test_Y):
 def hypersearch(train_scaler, y_train, test_scaler, y_test, testPath, config_No):
     reset_global_variables(train_scaler, y_train, test_scaler, y_test)
 
-    testPath = testPath + 'ConfigNo' + str(config_No)
+    if gc.XAIFS == 'XAIFS':
+        testPath = testPath + 'XAIFS_' + str(config_No)
+    else:
+        testPath = testPath + 'ConfigNo' + str(config_No)
+
     try:
         os.remove(testPath + 'Results.csv')
     except IOError:
@@ -167,7 +171,7 @@ def hypersearch(train_scaler, y_train, test_scaler, y_test, testPath, config_No)
 
     trials = Trials()
 
-    best = fmin(fit_and_score, space, algo=tpe.suggest, max_evals=30, trials=trials,
+    best = fmin(fit_and_score, space, algo=tpe.suggest, max_evals=1, trials=trials,
                 rstate=np.random.RandomState(my_seed))
 
     return gc.best_model, gc.best_time, gc.best_score

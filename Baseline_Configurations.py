@@ -110,12 +110,12 @@ class Baseline_Configurations():
 
         print ('The Feature Selection has been done using ', str(config_No) + ' Features\n')
 
-
+        gc.XAIFS = 'XAIFS'
 
         model, time1, best_score = Baseline_HyperModel.hypersearch(XAIFS_train_adv, y_train_adv,
                                                                    XAIFS_test, y_test, path, config_No)
 
-        model.save(path + 'V2_'+ str(config_No) + '.h5')
+        model.save(path + 'XAIFS_'+ str(config_No) + '.h5')
 
         Y_predicted = np.argmax(model.predict(XAIFS_test), axis=1)
         Confusion_matrix = confusion_matrix(y_test, Y_predicted)

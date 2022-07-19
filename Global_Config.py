@@ -20,8 +20,7 @@ test_X=None
 test_Y =None
 train_R =None
 
-XAI_train  = None
-Xai_test = None
+XAIFS = None
 
 y_xaitrain = None
 y_xaitest = None
