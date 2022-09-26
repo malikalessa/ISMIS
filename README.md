@@ -6,6 +6,9 @@
 # XAI to explore robustness of features in adversarial training for cybersecurity
 Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
+# Cite this paper
+AL-Essa, M., Andresini, G., Appice, A., Malerba, D. (2022). XAI to Explore Robustness of Features in Adversarial Training for Cybersecurity. In: Ceci, M., Flesca, S., Masciari, E., Manco, G., Raś, Z.W. (eds) Foundations of Intelligent Systems. ISMIS 2022. Lecture Notes in Computer Science(), vol 13515. Springer, Cham. https://doi.org/10.1007/978-3-031-16564-1_12
+
 
 ![image](https://user-images.githubusercontent.com/38468857/178991622-3582906a-f8da-431b-9cd5-abc98e113c5d.png)
 
